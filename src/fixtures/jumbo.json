@@ -9,8 +9,8 @@
   },
   {
     "id": 2,
-    "title": "Download your shows to watch on the go.",
-    "subTitle": "Save your data and watch all your favorites offline.",
+    "title": "Download your shows to watch offline.",
+    "subTitle": "Save your favorites easily and always have something to watch",
     "image": "/images/misc/home-mobile.jpg",
     "alt": "Watch on mobile",
     "direction": "row-reverse"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "Create profiles for kids.",
-    "subTitle": "Send kids on adventures with their favorite characters in a space made just for them-- free with your membership.",
+    "subTitle": "Send kids on adventures with their favorite characters in a space made just for them—free with your membership.",
     "image": "/images/misc/home-mobile.jpg",
     "alt": "Profiles for kids",
     "direction": "row-reverse"
