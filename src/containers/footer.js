@@ -36,6 +36,9 @@ export function FooterContainer() {
           <Footer.Link href="#">Legal Notices</Footer.Link>
         </Footer.Column>
       </Footer.Row>
+
+      <Footer.Text>Translation Component i18next Dropdown</Footer.Text>
+      <Footer.Text>Netflix Canada</Footer.Text>
     </Footer>
   );
 }
