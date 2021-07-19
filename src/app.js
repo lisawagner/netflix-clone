@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Home, Browse, Signin, Signup } from "./pages";
+import { Home, Browse, SignIn, SignUp } from "./pages";
 import * as ROUTES from "./constants/routes";
 
 export default function App() {
@@ -9,10 +9,10 @@ export default function App() {
         <Browse />
       </Route>
       <Route exact path="/signin">
-        <Signin />
+        <SignIn />
       </Route>
       <Route exact path="/signup">
-        <Signup />
+        <SignUp />
       </Route>
       <Route exact path={ROUTES.HOME}>
         <Home />
