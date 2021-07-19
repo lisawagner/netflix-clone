@@ -2,6 +2,7 @@
 src/**/lib/
 /src/lib/firebase.js
 /src/lib/firebase.prod.js
+**/lib
 
 # dependencies
 /node_modules
