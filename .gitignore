@@ -1,7 +1,4 @@
 # firebase
-firebase.js
-firebase.prod.js
-
 src/lib/firebase.prod.js
 src/lib/firebase.js
 
