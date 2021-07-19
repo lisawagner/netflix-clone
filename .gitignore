@@ -1,6 +1,7 @@
 # firebase
 src/lib/firebase.prod.js
 src/lib/firebase.js
+src/seed.js
 
 # dependencies
 /node_modules
