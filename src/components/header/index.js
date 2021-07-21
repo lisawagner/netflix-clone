@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
 import {
   Container,
@@ -42,10 +42,35 @@ Header.FeatureCallOut = function HeaderFeatureCallOut({
 Header.Profile = function HeaderProfile({ children, ...restProps }) {
   return <Profile {...restProps}>{children}</Profile>;
 };
-
 Header.Picture = function HeaderPicture({ src, ...restProps }) {
   return <Picture {...restProps} src={`/images/users/${src}.png`} />;
 };
+
+Header.Search = function HeaderSearch({
+  searchTerm,
+  setSearchTerm,
+  ...restProps
+}) {
+  const [searchActive, setSearchActive] = useState(false);
+
+  return (
+    <Search {...restProps}>
+      {/* read batching in react, setting state values on: prev -> setPrev */}
+      <SearchIcon
+        onClick={() => setSearchActive((searchActive) => !searchActive)}
+      >
+        <img src="/images/icons/search.png" alt="Search" />
+      </SearchIcon>
+      <SearchInput
+        value={searchTerm}
+        onChange={({ target }) => setSearchTerm(target.value)}
+        placeholder="Search films and series"
+        active={searchActive}
+      />
+    </Search>
+  );
+};
+
 Header.Dropdown = function HeaderDropdown({ children, ...restProps }) {
   return <Dropdown {...restProps}>{children}</Dropdown>;
 };
