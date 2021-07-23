@@ -8,6 +8,7 @@ import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
 
 export function BrowseContainer({ slides }) {
+  // set initial states for the BrowseContainer. consider redux
   const [category, setCategory] = useState("series");
   const [searchTerm, setSearchTerm] = useState("");
   const [profile, setProfile] = useState({});
@@ -41,6 +42,7 @@ export function BrowseContainer({ slides }) {
     }
   }, [searchTerm]);
 
+  // return BrowseContainer set up
   return profile.displayName ? (
     <>
       {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
